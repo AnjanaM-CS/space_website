@@ -1,0 +1,319 @@
+/* Landing page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.landing-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/star-bg.png) no-repeat center center/cover; }
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color:#9290C3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.overlay h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color:#9290C3;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.prompt {
+    font-size: 1.1rem;
+    cursor: pointer;
+    color:#ECDFCC;
+    padding: 10px ;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(90, 179, 255, 0.4);
+}
+
+.prompt:hover {
+    background-color:#9290C3;
+    transform: scale(1.05);
+}
+/*Special effects*/
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Home Page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(./images/starry-night.jpg) no-repeat center center/cover;
+    color: #EAEAEA;
+    background-attachment: fixed;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+}
+
+nav ul {
+    list-style-type: none; 
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #76ABAE;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #EEEEEE;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px #EEE4B1; 
+}
+
+/* Header Section */
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: url(./images/space-bg.jpg) no-repeat center center/cover;
+}
+
+.header-content {
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.header-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 
+        0 4px 8px #720455,
+        0 0 25px #BB8493,
+        0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.header-content h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #C4B0FF;
+}
+
+/* Info Card Styling */
+.info-card {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(44, 44, 84, 0.8); 
+    margin: 1rem auto;
+    padding: 2rem; 
+    border-radius: 12px;
+    text-align: left;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.info-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem; 
+}
+
+.info-card h3 {
+    margin-bottom: 0.75rem; 
+    font-size: 2rem; 
+    color: #C4B0FF; 
+    font-weight: 600; 
+    border-bottom: 2px solid #9E4784; 
+    padding-bottom: 0.5rem; 
+}
+
+.info-card p {
+    margin-bottom: 1.5rem; 
+    font-size: 1.1rem;
+    line-height: 1.8; 
+}
+
+.info-card ul {
+    list-style-type: none; 
+    padding-left: 0; 
+    margin-bottom: 1.5rem; 
+}
+
+.info-card ul h4 {
+    margin-bottom: 0.5rem; 
+    font-size: 1.2rem;
+    color: #9E4784; 
+    font-weight: 500; 
+}
+
+.info-card ul li {
+    margin-bottom: 1rem; 
+    font-size: 1.1rem; 
+}
+
+.info-card ol {
+    margin-bottom: 1.5rem; 
+    padding-left: 2rem; 
+}
+
+.info-card ol h4 {
+    margin-bottom: 0.5rem; 
+    font-size: 1.2rem; 
+    color: #9E4784; 
+    font-weight: 500; }
+
+.info-card ol li {
+    margin-bottom: 1rem; 
+    font-size: 1.1rem; 
+}
+
+
+/* Contact Section */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #9E4784;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #EAEAEA;
+}
+
+form button {
+    background: #C4B0FF;
+    border: none;
+    color: #1b1b2f;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #9E4784;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    color: #C4B0FF;
+}
+
